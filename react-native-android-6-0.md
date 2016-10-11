@@ -289,7 +289,7 @@ public class Test extends ReactContextBaseJavaModule implements PermissionListen
             case RECORD_AUDIO_REQUEST_CODE:
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // Permission Granted
-                    doBeginRecord(true);
+                    doBeginRecord();
                 } else {
                     // Permission Denied
                 }
